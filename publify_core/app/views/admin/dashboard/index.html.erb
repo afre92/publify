@@ -1,0 +1,22 @@
+<% content_for :page_heading do %>
+<h2 class="page-title"><%= t('.welcome_back', user_name: current_user.name) %></h2>
+<% end %>
+
+<%= render 'overview' %>
+<% if Content.where(text_filter_name: "textile").any? || Feedback.where(text_filter_name: "textile").any? %>
+  <div class="alert alert-warning">
+    <p>
+    <%= t('.textile_deprecated_html') %>
+    </p>
+  </div>
+<% end %>
+
+<div class='row'>
+  <div class='col-md-6'>
+    <%= render 'welcome' %>
+    <%= render 'comments' %>
+  </div>
+  <div class='col-md-6'>
+    <%= render 'drafts' %>
+  </div>
+</div>
