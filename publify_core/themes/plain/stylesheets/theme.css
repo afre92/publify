@@ -1,10 +1,11 @@
 /* Fonts and colors */
 body {
   font-family: sans-serif;
+  background-color: #172A36;
 }
-h1 a, h2 a {
+h1 a, h2 a, p {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 h1 a:hover, h2 a:hover {
   text-decoration: underline;
