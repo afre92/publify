@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :users, controllers: { registrations: "users/registrations" }
+  # devise_for :users, controllers: { registrations: "users/registrations" }
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+  }
 
   # TODO: use only in archive sidebar. See how made other system
   get ":year/:month", to: "articles#index", year: /\d{4}/, month: /\d{1,2}/,
