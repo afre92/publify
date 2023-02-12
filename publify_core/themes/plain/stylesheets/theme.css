@@ -1,11 +1,14 @@
 /* Fonts and colors */
 body {
-  font-family: sans-serif;
+  
+  font-family: kepler !important;
   background-color: #172A36;
 }
-h1 a, h2 a, p {
+h1 a, h2 a, p, a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: x-large;
+  font-weight: 100;
 }
 h1 a:hover, h2 a:hover {
   text-decoration: underline;
