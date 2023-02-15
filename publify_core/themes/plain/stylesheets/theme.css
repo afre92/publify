@@ -1,9 +1,5 @@
 /* Fonts and colors */
-body {
-  
-  font-family: kepler !important;
-  background-color: #172A36;
-}
+
 h1 a, h2 a, p, a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -62,4 +58,14 @@ div.footer {
 
 .hidden {
   display: none !important;
+}
+
+body {
+  font-family: 'kepler' !important;
+  background-color: #172A36;
+}
+
+@font-face {
+  font-family: 'kepler';
+  src: url('/assets/kepler-std-regular.otf');
 }
